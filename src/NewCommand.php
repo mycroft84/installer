@@ -40,6 +40,9 @@ class NewCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+
+        $output->writeln('<info>Crafting application... 2</info>');exit;
+
         if (! class_exists('ZipArchive')) {
             throw new RuntimeException('The Zip PHP extension is not installed. Please install it and try again.');
         }
